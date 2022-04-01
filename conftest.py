@@ -12,7 +12,6 @@ def browser(request):
     browser_language = request.config.getoption("language")
     browser = None
 
-
     if browser_language:
         print("\nstart chrome browser for test..")
         options = Options()
