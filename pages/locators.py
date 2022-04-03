@@ -21,3 +21,11 @@ class ProductPageLocators():
 class BasePageLocators():
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+    BASKET_LINK = (By.XPATH, "//a[@class='btn btn-default']")
+
+class BasketPageLocators():
+    MESSAGE_ABOUT_EMPTY_BASKET = (By.XPATH, '//p')
+    EXPECTED_MESSAGE = "Your basket is empty."
+    
+    NOT_EMPTY_MESSAGE = (By.XPATH, "//h2[@class]")

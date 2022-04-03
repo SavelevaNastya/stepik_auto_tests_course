@@ -6,7 +6,6 @@ import time
 class LoginPage(BasePage):
     def should_be_login_page(self):
         self.should_be_login_url()
-        time.sleep(2)
         self.should_be_login_form()
         self.should_be_register_form()
 
