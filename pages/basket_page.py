@@ -1,5 +1,5 @@
-from pages.base_page import BasePage
-from pages.locators import BasketPageLocators
+from .base_page import BasePage
+from .locators import BasketPageLocators
 import time
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait

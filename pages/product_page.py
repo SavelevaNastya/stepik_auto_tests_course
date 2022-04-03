@@ -1,5 +1,5 @@
-from pages.base_page import BasePage
-from pages.locators import ProductPageLocators
+from .base_page import BasePage
+from .locators import ProductPageLocators
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,7 +9,6 @@ class ProductPage(BasePage):
 
     def should_be_add_to_cart(self):
         self.add_to_cart()
-        self.solve_quiz_and_get_code()
         self.should_see_message()
         self.should_be_same_price()
 
@@ -23,9 +22,6 @@ class ProductPage(BasePage):
     def message_disappeared_after_adding_product_to_basket(self):
         self.add_to_cart()
         assert self.is_disappeared(*ProductPageLocators.SUCCESSE_MESSAGE), "Success message is still presented"
-
-    
-
 
     def add_to_cart(self):
         add_to_cart_button = self.browser.find_element(*ProductPageLocators.ADD_TO_CART)
