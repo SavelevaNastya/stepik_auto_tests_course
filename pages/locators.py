@@ -17,3 +17,7 @@ class ProductPageLocators():
     PRODUCT_NAME_IN_MESSAGE = (By.XPATH, "//div[@id='messages']//strong") 
 
     SUCCESSE_MESSAGE = (By.XPATH, "//div[@id='messages']/div")
+
+class BasePageLocators():
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
