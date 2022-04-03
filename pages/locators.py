@@ -15,3 +15,5 @@ class ProductPageLocators():
 
     PRODUCT_NAME = (By.CSS_SELECTOR, "li[class='active']") 
     PRODUCT_NAME_IN_MESSAGE = (By.XPATH, "//div[@id='messages']//strong") 
+
+    SUCCESSE_MESSAGE = (By.XPATH, "//div[@id='messages']/div")
